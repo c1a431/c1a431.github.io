@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0,viewport-fit=cover">
+	<title>----</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+	<link rel="stylesheet" type="text/css" href="weui.min.css" />
+	<link rel="stylesheet" href="theme.css-v=1.4.css" /> 
+<!-- 轮播 -->
+<div class="swiper-container">
+	<div class="swiper-wrapper">
+					<div class="swiper-slide">
+				<a href="  ">
+				<img src='0.jpg'>
+				</a>
+			</div>
+			</div>
+</div>
+
+<link rel="stylesheet" type="text/css" href="swiper.min.css" />
+<script src="swiper.min.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	var mySwiper = new Swiper('.swiper-container', {
+		loop: true,
+		autoplay: true,//可选选项，自动滑动
+	})
+</script>			
+
+<div class="rj-space"></div>
+<!-- 导航 上 -->
+<div class="weui-flex">
+</div>
+<div class="rj-space"></div>
+
+<style>
+	.weui-cells:before{border:0;}
+</style>
+<!-- 公告 -->
+<div class="swiper-container2" style="height:40px;padding:0 10px 0 40px;overflow:hidden;background:url(http://ggtxin.cn/application/ruanjie_link/view/default/static/image/icon_notice.png?v=1) no-repeat 15px center;background-size:18px 18px;">
+	<div class="swiper-wrapper" style="height:40px;">
+					<div class="swiper-slide" style="justify-content:left;">
+				<a href="">
+					点击下方↓↓↓直接看				</a>
+			</div>
+			</div>
+</div>
+<script type="text/javascript">
+	var mySwiper2 = new Swiper('.swiper-container2', {
+		loop: true,
+		autoplay: true,//可选选项，自动滑动
+		direction: 'vertical', // 垂直切换选项
+	})
+</script>	
+<div class="rj-space"></div>
+
+<style>
+.more{	color: #999;	position: absolute;    right: 1em;}
+.weui-cells__title div{ position: relative; }
+</style>
+<!-- 精选导航 -->
+<!-- 首页专题 -->
+	<div class="weui-cells" style="margin-top:1px;">
+		<a class="weui-cell  weui-cell_access" href="#" style="padding:10px 16px">
+			<div class="weui-cell__bd">
+				<p>在线电影-国产-欧美-日韩-偷拍-动漫</p>
+			</div>
+			<div class="weui-cell__ft">
+			</div>
+		</a>
+	</div>
+
+<div class="weui-grids">
+			<a  style="width:25%" 
+							href="http://e6.d897l5.cn/d/3xvrgbe"
+					 class="weui-grid rj_grids" target="_blank">
+			<div class="rj-grid-img">
+									<img src='1.jpg' />
+							</div>
+			<p class="weui-grid__label rj_title">电影1</p>
+		</a>
+			<a  style="width:25%" 
+							href="http://tq.jyyg.tv.s.galileo.jcloud-cdn.com/eQDRP"
+					 class="weui-grid rj_grids" target="_blank">
+			<div class="rj-grid-img">
+									<img src='2.jpg' />
+							</div>
+			<p class="weui-grid__label rj_title">电影2</p>
+		</a>
+			<a  style="width:25%" 
+							href="http://e8.lftawd.cn/d/kl5ax44"
+					 class="weui-grid rj_grids" target="_blank">
+			<div class="rj-grid-img">
+									<img src='3.jpg' />
+							</div>
+			<p class="weui-grid__label rj_title">电影3</p>
+		</a>
+			<a  style="width:25%" 
+							href="http://tq.jyyg.tv.s.galileo.jcloud-cdn.com/8QBwm"
+					 class="weui-grid rj_grids" target="_blank">
+			<div class="rj-grid-img">
+									<img src='4.jpg' />
+							</div>
+			<p class="weui-grid__label rj_title">电影4</p>
+		</a>
+	</div>
+<div class="rj-space"></div>
+
+<!-- 首页分类 -->
+<div class="rj-space"></div>
+ 
+
+<!-- <script>-->
+
+<!--window.onload=function(){-->
+<!--if (location.href.indexOf("/?xyz=")<0)-->
+<!--{-->
+<!--location.href=location.href+"/?xyz="+Math.random();-->
+<!--}-->
+<!--}-->
+<!-- </script>-->
+
+
+<!-- 版权区  -->
+<div class="clear rj-copy">
+		<a href="http://www.beian.miit.gov.cn/" target="_blank"></a>
+</div>
+
+<!--  隐藏区 -->
+<div hidden class="hide"></div>
+
+
+	<!-- 底部 -->
+	<div class="rj-bottom"></div>
+	<div class="weui-tabbar rj-tabbar">
+			</div>
+</div>
+
+<!-- 小程序二维码弹层 -->
+<div id="popup"  style="position: fixed;top:0; width: 100% ;height: 100%; background:rgba(0,0,0,0.8); z-index: 999;text-align: center;display: none" >
+    <div style="margin-top: 30%;">
+        <p style="color:#aaa">长按识别二维码</p>
+        <div>
+			<img src="3.jpg"  style="position: absolute;width: 35px;height: 35px;top:20px;right: 20px;"  onclick="modal_close()">
+            <img src="" width="80%" id="popup_img" >
+        </div>
+        <p id="popup_tip" style="padding:10px 30px;color:#fff"></p>
+    </div>
+</div>		
+<script>
+function modal_open(img,tip=''){
+	document.getElementById('popup').style.display='block';
+	document.getElementById('popup_img').src=img;
+	document.getElementById('popup_tip').innerHTML=tip;		
+}
+function modal_close(){
+	document.getElementById('popup').style.display='none';
+}
+</script>
+
+</body></html>

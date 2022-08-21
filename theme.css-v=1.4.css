@@ -1,0 +1,44 @@
+/*
+默认3列
+*/
+.container{max-width:1080px;margin:0 auto}
+.weui-flex{flex-wrap: wrap;}
+.weui-flex__item{flex: 0 0 20%;}
+.weui-tabbar__label{color:#000}
+
+body{ }
+a{color:#000;font-size:14px;}
+
+.swiper-container {width: 100%; height: 100%;}
+.swiper-slide {text-align: center; display: flex; justify-content: center; align-items: center;}
+.swiper-slide img{width: 100%;vertical-align: top;}
+
+.rj-space{width: 100%; height: 5px; background-color: #f5f5f5; clear:both;}
+.rj-bottom{width: 100%; height: 53px;}
+
+.rj-tabbar{position: fixed; bottom: 0;max-width:1080px;margin:0 auto;width: 100%;}
+.rj-tabbar__item{padding: 10px 0;}
+.rj-tabbar__item:active{background-color: #ececec;}
+.rj-tabbar__item div{width: 70%; height: 70%; margin: 0 auto;}
+.rj-tabbar__item div img{width: 100%;border-radius:10%;}
+.rj-tabbar__item p.weui-tabbar__label{font-size: 12px;}
+.rj-tabbar p.weui-tabbar__label{font-size: 12px;}
+
+.rj-grid-img{margin-top: 10px;}
+.rj-grid-img img{width: 100%;border-radius:6px;}
+
+.rj-foot-img{height: 27px;width: 27px; margin: 0 auto;}
+.rj-foot-img img{width: 100%;}
+
+.rj_title{ font-size: 1em;}
+.rj_grids{ padding-top: 10px; padding-bottom: 10px;}
+
+.rj-grid-icon{width: 50px; height: 50px;}
+
+/*  版权区 */
+.rj-copy{ clear: both; text-align:center; background-color:#fff; line-height: 200%;}
+/*   隐藏区 */
+.hide{ display:none}
+
+article img{max-width:100%}
+
